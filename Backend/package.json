@@ -1,0 +1,51 @@
+{
+  "name": "user-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx prisma generate && tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node index.ts",
+    "seed": "ts-node prisma/seed.ts",
+    "seed:orders": "ts-node prisma/orderSeeder.ts",
+    "vercel-build": "npx prisma generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "6.19",
+    "@types/cors": "^2.8.19",
+    "axios": "^1.13.2",
+    "bcrypt": "^6.0.0",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.21.0",
+    "multer": "^2.0.2",
+    "streamifier": "^0.1.1",
+    "xendit-node": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/body-parser": "^1.19.6",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/knex": "^0.15.2",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.10.3",
+    "@types/streamifier": "^0.1.2",
+    "nodemon": "^3.1.11",
+    "prisma": "6.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
