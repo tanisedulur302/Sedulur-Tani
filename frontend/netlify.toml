@@ -1,6 +1,5 @@
 [build]
   command = "NEXT_TELEMETRY_DISABLED=1 npm run build"
-  publish = ".next"
   environment = { NODE_VERSION = "20" }
 
 [[plugins]]
