@@ -3,9 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: false, // Disable strict mode to reduce hydration warnings
 
-  // Output standalone for better Vercel deployment
-  output: "standalone",
-
   // Disable TypeScript errors during build (for faster deployment)
   typescript: {
     ignoreBuildErrors: true,
